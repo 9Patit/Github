@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>รวมคำสั่งgit</h1> 
+    <p>
+        git init = สร้าง local git repository <br> 
+        
+        การเพิ่มไฟล์เข้าสู่ staging area (check-in) แบบต่างๆ<br>
+        
+        git add <file_name> = เพิ่มไฟล์เดียวโดยการระบุชื่อไฟล์ เช่น git add index.html<br>        
+                
+        git add *.html = เพิ่มหลายๆไฟล์โดยการระบุนามสกุลไฟล์<br>
+        
+        git add . = เพิ่มทุกไฟล์ที่มีใน Directory <br>
+         
+        การลบไฟล์ออกจาก Git Repository <br>
+        
+        git rm -r —cached . = ลบทั้งหมด<br>
+        
+        git rm —cached <file_name> = ลบแบบระบุชื่อไฟล์<br>
+    
+        git status = ตรวจสอบสถานะ<br>
+        
+        git commit -m "Log Message" = เก็บประวัติการแก้ไข <br>
+        
+        git log = ดูประวัติการ commit <br>
+
+        git log --online = แสดงแต่ละlog ในบรรทัดเดียว <br>    
+
+        git log --graph = แสดงเป็นเส้นbranch ให้ดูง่ายขึ้น <br>
+
+        เปรียบเทียบversion (diff) <br>
+
+        git diff <commit_id></commit_id> = ใช้สำหรับความแตกต่างของแต่ละ commit <br>   
+
+        git checkout = ย้อนกลับไป versionล่าสุด <br>
+        
+        ย้อนกลับก่อน add หรือย้อนกลับไปcommit idที่ระบุ <br>
+        git reset <file_name> <br>
+        git reset --option <commit_id> <br>
+            soft ใช้ลบ commit ทั้งหมดที่อยู่หลังcommit id แล้วนำไฟล์ที่เคยอยู่ในcommit นั้น กลับมา staging area <br>
+            mixed  soft ใช้ลบ commit ทั้งหมดที่อยู่หลังcommit id แล้วนำไฟล์ที่เคยอยู่ในcommit นั้น กลับมา working directory <br>
+            hard ใช้ลบ commit ทั้งหมดที่อยู่หลังcommit id แล้วทำลายไฟล์ที่เคยอยู่ในcommit นั้น <br>
+
+        git branching <br>
+
+        git branch  = การแสดงรายชื่อ branch <br>
+        
+        git checkout -b <ชื่อ branch>  = การสร้าง branch (ห้ามตั้งชื่อเว้นวรรคให้ใช้ - หรือ _ แทน) <br>
+        
+        git branch -d <ชื่อ branch> = การลบ branch <br>
+        
+        git checkout <ชื่อ branch> = การสลับ branch <br>
+
+        git checkout master = กลับไป branch หลัก <br>
+
+        git merge <ชื่อ branch> = การรวม branch <br>
+
+        git push = อัพไฟล์จาก local repository ขึ้นไปที่ github <br>
+
+
+        
+        
+
+
+
+    </p>
+    
+
+        
+</body>
+</html>
